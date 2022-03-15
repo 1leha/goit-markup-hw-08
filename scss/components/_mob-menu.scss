@@ -6,7 +6,7 @@
   background-color: transparent;
 
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   cursor: pointer;
   top: 10px;
   right: 15px;
@@ -40,7 +40,7 @@
 }
 
 .menu-container {
-  z-index: 2;
+  z-index: 1;
   display: none;
 
   @media screen and (max-width: 767px) {
@@ -83,7 +83,7 @@
     margin-right: 20px;
 
     &::after {
-      content: "";
+      content: '';
       width: 1px;
       height: 22px;
       position: absolute;

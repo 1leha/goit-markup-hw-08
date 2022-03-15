@@ -2,11 +2,15 @@
   display: block;
   text-decoration: none;
 
+  display: flex;
+  flex-direction: column;
+
   @include projTransitions((box-shadow, transform));
 
   &:hover,
   &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -15,6 +19,8 @@
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
+
+  flex-grow: 1;
 
   border: 1px solid var(--color-cards-portfolio);
 }
@@ -74,10 +80,7 @@
 }
 
 .card__text {
-  // width: 322px;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
+  @include font(18, 28, 500, 0.03);
 
   color: var(--color-white);
 }

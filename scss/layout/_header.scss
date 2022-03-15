@@ -49,6 +49,8 @@
 
 /* *Стили для меню */
 .header__menu {
+  margin-bottom: 64px;
+
   @include tablet {
     margin-left: 88px;
   }
