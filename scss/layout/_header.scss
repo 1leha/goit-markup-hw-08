@@ -53,9 +53,11 @@
 
   @include tablet {
     margin-left: 88px;
+    margin-bottom: 0;
   }
   @include desktop {
     margin-left: 93px;
+    margin-bottom: 0;
   }
   // display: none;
 }
