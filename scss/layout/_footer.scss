@@ -8,7 +8,7 @@
 
 .footer__container {
   @include tablet {
-    @include flexAlign($align: baseline);
+    @include flexAlign($align: baseline, $justify: space-around);
     flex-wrap: wrap;
     margin: 0 auto;
   }
@@ -68,6 +68,7 @@
 .footer__subscription {
   @include tablet {
     margin-top: 60px;
+    margin-bottom: 0;
   }
   @include desktop {
     margin-left: auto;
@@ -76,17 +77,20 @@
 }
 
 .footer__adress {
+  margin-bottom: 60px;
+
   @include tablet {
-    margin-right: 165px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 
   @include desktop {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
 .footer__title {
-  margin-top: 60px;
   margin-bottom: 20px;
 
   @include font(14, 16, 700, 0.03);
@@ -105,6 +109,10 @@
 
     text-align: left;
   }
+}
+
+.footer__social {
+  margin-bottom: 60px;
 }
 
 .footer__social-link {

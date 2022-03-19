@@ -35,7 +35,7 @@
 }
 
 .card__description {
-  @include font(16, 30, 500, 0.03);
+  @include font(16, 30, 400, 0.03);
 
   color: var(--color-secondary);
 }

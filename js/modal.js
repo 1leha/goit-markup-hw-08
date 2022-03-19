@@ -3,14 +3,14 @@
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
-    scroll: document.querySelector('[deny-scroll]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
+    document.body.classList.toggle('scroll-hidden');
+
     refs.modal.classList.toggle('backdrop--is-hidden');
-    refs.scroll.classList.toggle('scroll-hidden');
   }
 })();

@@ -52,11 +52,9 @@
   margin-bottom: 64px;
 
   @include tablet {
-    margin-left: 88px;
     margin-bottom: 0;
   }
   @include desktop {
-    margin-left: 93px;
     margin-bottom: 0;
   }
   // display: none;
@@ -108,13 +106,6 @@
       margin-bottom: 0px;
     }
   }
-
-  // @include desktop {
-  //   &:last-child {
-  //     margin-right: 30px;
-  //     margin-bottom: 0px;
-  //   }
-  // }
 
   @include tablet {
     &:not(:last-child) {
@@ -175,5 +166,7 @@
     @include flexAlign($align: center);
     padding-top: 32px;
     padding-bottom: 32px;
+
+    @include font(14, 16, 500, 0.02);
   }
 }

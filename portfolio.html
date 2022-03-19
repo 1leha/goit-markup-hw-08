@@ -21,7 +21,7 @@
 
     <title>goit-markup-hw-08 (Домашка 08)</title>
   </head>
-  <body deny-scroll>
+  <body>
     <!-- *Хедер  -->
     <header class="header">
       <div class="container header__container">
@@ -34,7 +34,7 @@
           type="button"
           aria-expanded="false"
           aria-controls="mob-menu-container"
-          mob-btn
+          data-mobile-button
         >
           <svg width="40" height="40" aria-label="Кнопка мобильного меню">
             <use
@@ -48,7 +48,7 @@
           </svg>
         </button>
 
-        <div class="menu-container" id="menu-container" mob-menu>
+        <div class="menu-container" id="mob-menu-container" data-mobile-menu>
           <nav class="navigation">
             <ul class="header__menu menu">
               <li class="menu__item">

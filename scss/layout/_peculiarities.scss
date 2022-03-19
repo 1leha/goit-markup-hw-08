@@ -7,8 +7,18 @@
 }
 
 .peculiarities__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @include tablet {
     flex-basis: calc((768px - 60px) / 2);
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
   }
 
   @include desktop {
@@ -34,7 +44,7 @@
   margin-bottom: 10px;
 
   @include font(14, 16, 700, 0.03);
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
 }
 
